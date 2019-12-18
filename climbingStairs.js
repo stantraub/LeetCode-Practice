@@ -8,4 +8,5 @@ function climbStairs(n) {
     }
 
     return table[table.length - 1];
+    //test
 }
