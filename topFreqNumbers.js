@@ -10,7 +10,7 @@ var topKFrequent = function (nums, k) {
     let entries = Object.entries(freq).sort((a, b) => b[1] - a[1])
 
     for (let i = 0; i < k; i++) {
-        res.push(parseInt(entries[i], 0));
+        res.push(parseInt(entries[i][0], 0));
     }
 
     return res;
