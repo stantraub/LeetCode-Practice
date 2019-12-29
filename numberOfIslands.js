@@ -8,7 +8,7 @@ function numberIslands(matrix) {
             if (matrix[i][j] === 1) {
                 dfs([i, j])
             }
-
+//
             if (size > 0) lengths.push(size);
         }
     }
