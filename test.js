@@ -7,7 +7,7 @@ function abbreviator(str) {
             abbreviated += str[i]
             continue
         }
-        //
+        
         if (hash[str[i]]) {
             
         }
