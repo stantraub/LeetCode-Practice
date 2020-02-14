@@ -10,5 +10,4 @@ var countNodes = function (root) {
     }
     helper(root)
     return nodes
-//hi
 };
