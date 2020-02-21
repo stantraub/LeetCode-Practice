@@ -1,15 +1,20 @@
 var preorder = function (root) {
-    let arr = [];
+    let res = [];
 
-    function preorderHelper(root) {
-        if (!root) return;
-        arr.push(root.val)
-        for (const child of root.children) {
-
-            preorderHelper(child)
+    function helper(root) {
+        if (!root) {
+            return
         }
-    }
-    preorderHelper(root)
 
-    return arr;
+        res.push(root.val)
+        for (const child of root.children) {
+            helper(child)
+        }
+
+
+    }
+
+    helper(root)
+
+    return res
 };
