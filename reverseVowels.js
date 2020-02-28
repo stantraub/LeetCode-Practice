@@ -15,7 +15,7 @@ function reverseVowels(s) {
         while (!vowels[arr[i].toLowerCase()] && i < j) {
             i++
         }
-//test
+
         while (!vowels[arr[j].toLowerCase()] && i < j) {
             j--
         }
