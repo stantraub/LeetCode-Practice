@@ -38,7 +38,7 @@ var orangesRotting = function (grid) {
             return -1
         }
 
-        rotten = infected;
+        rotten = infected; // continue to infect other cells with newly infected oranges
         minutes++
 
     }
@@ -47,6 +47,6 @@ var orangesRotting = function (grid) {
 
     // console.log(rotten)
     // console.log(fresh)
-};
+}
 
 console.log(orangesRotting([[2, 1, 1], [1, 1, 0], [0, 1, 1]]))
