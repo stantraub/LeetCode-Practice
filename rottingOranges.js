@@ -49,4 +49,4 @@ var orangesRotting = function (grid) {
     // console.log(fresh)
 }
 
-console.log(orangesRotting([[2, 1, 1], [1, 1, 0], [0, 1, 1]]))
+// console.log(orangesRotting([[2, 1, 1], [1, 1, 0], [0, 1, 1]]))
