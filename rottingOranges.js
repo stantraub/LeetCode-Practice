@@ -44,9 +44,6 @@ var orangesRotting = function (grid) {
     }
 
     return minutes
-
-    // console.log(rotten)
-    // console.log(fresh)
 }
 
 // console.log(orangesRotting([[2, 1, 1], [1, 1, 0], [0, 1, 1]]))
