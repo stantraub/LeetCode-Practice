@@ -8,7 +8,7 @@ var moveZeroes = function (nums) {
 
         }
     }
-
+//testing
     for (let i = pos; i < nums.length; i++) {
         nums[i] = 0;
     }
