@@ -9,16 +9,24 @@ function isSame(first, second) {
     return (first.suit === second.suit) && (first.rank === second.rank)
 }
 
-const suits = ['clubs', 'diamonds', 'hearts', 'spades']
-const ranks = ['two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'jack', 'king', 'queen', 'ace']
+class Deck {
+    constructor() {
+        this.deck = []
 
-let deck = []
+        const suits = ['clubs', 'diamonds', 'hearts', 'spades']
+        const ranks = ['two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'jack', 'king', 'queen', 'ace']
 
-for (const suit of suits) {
-    for (const rank of ranks) {
-        deck.push(new Card(suit, rank))
+        for (const suit of suits) {
+            for (const rank of ranks) {
+                this.deck.push(new Card(suit, rank))
+            }
+        }
     }
+
+ 
 }
+
+let deck = new Deck().deck
 
 let hand = []
 
