@@ -9,3 +9,5 @@ var lastStoneWeight = function (stones) {
     }
     return stones;
 };
+
+console.log(lastStoneWeight([1,4,2,5,3,5,6]))
