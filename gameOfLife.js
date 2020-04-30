@@ -1,4 +1,4 @@
-var gameOfLife = function (board) {
+function gameOfLife(board) {
     //make a copy of the old state of the board
     let oldState = []
 
