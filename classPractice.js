@@ -1,4 +1,4 @@
-class Callback {
+class Observer {
     constructor() {
         this.functionsArr = [];
     }
@@ -19,17 +19,10 @@ class Callback {
     }
 }
 
-let test = new Callback()
-let func1 = function add2(num) {
-    return num + 2
-}
+let observable = new Observable()
 
-let func2 = function mult2(num) {
-    return num * 2
-}
 
-test.subscribe(func1)
-test.subscribe(func2)
-// test.unsubscribe(func1)
-test.emit(2,4)
+
+observable.subscribe()
+
 
