@@ -4,13 +4,12 @@ class TaskPool {
     }
 
     run() {
-        console.log(this.queue)
         return Promise.all(this.queue)
-        .then(() => {
+        .then((res) => {
             this.queue = []
-            console.log('Ready to accept new requests')
-            
+            console.log(res)
         })
+        .then(() => console.log('Ready to accept new tasks'))
     }
 }
 
@@ -25,7 +24,7 @@ const maxConcurrency = async (max) => {
     ]
     let pool = new TaskPool(max)
 
-    for (const url of urls) {
+    for  (const url of urls) {
         if (pool.queue.length < max) {
             pool.queue.push(url)
         } else {
@@ -34,4 +33,4 @@ const maxConcurrency = async (max) => {
     }
 }
 
-console.log(maxConcurrency(2))
+maxConcurrency(2)
