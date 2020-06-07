@@ -14,7 +14,7 @@ function numberIslands(matrix) {
     }
 
     function inBounds(coord, dir) {
-
+// helper function for checking if new coordinate is in bounds 
         const [x, y] = coord
         if (x + dir[0] < board.length && x + dir[0] >= 0 && y + dir[1] < board[0].length && y + dir[1] >= 0) {
             return true
